@@ -5,7 +5,7 @@
 
   interface CoffeeMaker{
     makeCoffee(shots:number): CoffeeCup;
-    fillCoffeeBeans(beans:number);
+    fillCoffeeBeans(beans:number): void;
   } //지켜야하는 규칙을 명시
 
   interface CommercialCoffeeMaker{
@@ -81,12 +81,18 @@
       constructor(private machine: CoffeeMaker){}
       makeCoffee(){
         const coffee = this.machine.makeCoffee(2);
+        console.log(coffee);
       }
     }
 
     class ProBarista{
-      constructor(private machine: CoffeeMaker){}
-
+      constructor(private machine: CommercialCoffeeMaker){}
+      makeCoffee(){
+        const coffee = this.machine.makeCoffee(2);
+        console.log(coffee);
+        this.machine.fillCoffeeBeans(45);
+        this.machine.clean();
+      }
     }
 
     const Amateur = new AmateurUser(maker);
