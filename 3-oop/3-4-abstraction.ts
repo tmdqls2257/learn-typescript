@@ -14,7 +14,7 @@
     clean(): void;
   }
 
-  class CoffeeMachine implements CoffeeMaker{
+  class CoffeeMachine implements CoffeeMaker, CommercialCoffeeMaker{
     private static BEANS_GRAMM_PER_SHOT:number = 7;
     protected coffeBeans: number = 0;
     
