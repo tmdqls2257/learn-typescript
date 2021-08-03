@@ -48,4 +48,16 @@
     title: null,
     author: 'seung',
   };
+
+  type Proxy<T> = {
+    get(): T;
+    set(value: T): void;
+  };
+
+  type Proxify <T> = {
+    [P in keyof T]: Proxy<T[P]>;
+    // 오브젝트를 돌면서 전달되는 타입을 Proxy라는 타입으로 만드는 역할
+  };
+
+  const obj3:
 }

@@ -8,7 +8,7 @@
 
   type VideoMetadata = Pick<Video, 'id' | 'title'>;
 
-  function getVideo(id: string): Video {
+  function _getVideo(id: string): Video {
     return {
       id,
       title: 'video',
