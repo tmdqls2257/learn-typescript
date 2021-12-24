@@ -56,7 +56,7 @@
       }
     
     }
-// 상속 하고자 하는 클래스가 선언된 다음에 해야한다.
+    // 상속 하고자 하는 클래스가 선언된 다음에 해야한다.
     class CaffeLatteMachine extends CoffeeMachine {
       //자식에서 constructor를 따로 구현하는 경우는 super를 사용해야한다.
       // 부모의 데이터도 받아와야한다.

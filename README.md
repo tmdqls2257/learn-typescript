@@ -1,1 +1,4 @@
-"# learn-typescript" 
+"# learn-typescript"
+///
+tsc
+///

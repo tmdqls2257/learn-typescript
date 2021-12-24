@@ -8,7 +8,7 @@
   interface CoffeeMaker{
     makeCoffee(shots:number): CoffeeCup;
     fillCoffeeBeans(beans:number): void;
-  } //지켜야하는 규칙을 명시
+  } 
 
   class CoffeeMachine implements CoffeeMaker{
     protected static BEANS_GRAMM_PER_SHOT:number = 7;
