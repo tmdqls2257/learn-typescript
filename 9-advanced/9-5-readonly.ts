@@ -1,8 +1,8 @@
 {
   type ToDo = {
-    title: string;
-    description: string;
-  };
+    title: string
+    description: string
+  }
 
   function display(todo: Readonly<ToDo>) {
     // 수정이 가능한 타입의 오브젝트를 전달하는 것은 굉장히 위험하다.

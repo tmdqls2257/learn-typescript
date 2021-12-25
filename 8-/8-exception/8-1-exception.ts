@@ -6,25 +6,26 @@
 
 function readFile(fileName: string): string {
   if (fileName === 'not exist!💩') {
-    throw new Error(`file not exist! ${fileName}`);
+    throw new Error(`file not exist! ${fileName}`)
   }
-  return 'file contents🗒';
+  return 'file contents🗒'
 }
 
 function closeFile(fileName: string) {
   //
 }
 function run() {
-  const fileName = 'not exist!💩';
+  const fileName = 'not exist!💩'
 
+  // 일단 한번 실행해보고
   try {
-    console.log(readFile(fileName));
+    console.log(readFile(fileName))
   } catch (error) {
-    console.log(`catched!!`);
-    return;
+    console.log(`catched!!`)
+    return
   } finally {
-    closeFile(fileName);
-    console.log(`closed!`);
+    closeFile(fileName)
+    console.log(`closed!`)
   }
 }
-run();
+run()
